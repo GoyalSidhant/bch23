@@ -1,0 +1,330 @@
+.header {
+  background: #000000;
+}
+
+.header .logo img {
+  max-height: 90px;
+  float: left !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.banner-title1 {
+  font-family: DejaVuSans !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  width: 100% !important;
+  letter-spacing: 20px;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.banner-title2 {
+  font-family: DejaVuSans !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  width: 100% !important;
+  letter-spacing: 2px !important;
+  font-size: 32px !important;
+  font-weight: bold;
+
+}
+
+.timer {
+  width: 100% !important;
+  font-weight: bold;
+}
+
+
+
+
+/***
+Coming Soon Page
+***/
+
+
+.coming-soon-header {
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.coming-soon-content {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.coming-soon-countdown {
+  padding: 20px;
+}
+
+.coming-soon-content h1,
+.coming-soon-content p {
+  color: #fff;
+}
+
+.coming-soon-content h1 {
+  font-size: 42px;
+  line-height: 50px;
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.coming-soon-content p {
+  font-size: 13px;
+}
+
+.coming-soon-footer {
+  text-align: left !important;
+  font-size: 12px;
+  color: #fefefe;
+  padding: 20px 20px 20px 20px;
+}
+
+/*Countdown*/
+#defaultCountdown {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+#defaultCountdown span.countdown_row {
+  overflow: hidden;
+}
+
+#defaultCountdown span.countdown_row span {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: BebasNeue !important;
+  line-height: 0px;
+  letter-spacing: 1;
+  margin-left: 2px;
+  margin-right: 2px;
+  background-color: #08b284;
+}
+
+#defaultCountdown span.countdown_row>span {
+ /* float: left;
+  width: 20%;*/
+}
+
+#defaultCountdown span.countdown_section {
+  color: #fff;
+  padding: 0px 0px !important;
+  padding-top: 0px !important;
+  padding-bottom: 10px !important;
+  margin-bottom: 2px;
+  font-weight: 300;
+  text-align: center;
+
+  display: inline-block;
+  font-size: 15x !important;
+  font-weight: bold;
+  color: #000000;
+}
+
+#defaultCountdown span.countdown_amount {
+  display: inline-block;
+  font-size: 15px !important;
+  padding: 10px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+
+  font-weight: bold;
+  color: #000000;
+}
+
+/*Responsive*/
+@media (max-width: 1024px) {
+  #defaultCountdown span.countdown_amount {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .coming-soon-header,
+  .coming-soon-countdown,
+  .coming-soon-content,
+  .coming-soon-footer {
+    margin-top: 0px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .coming-soon-content .btn-subscribe span {
+    display: none;
+  }
+}
+
+.about {
+  background-color: #08b284;
+
+}
+
+.panel {
+  background-color: #000000;
+  padding: 10px;
+  width: fit-content;
+  color: #08b284;
+  font-weight: bold;
+  float: left;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-family: BebasNeue !important;
+  letter-spacing: 1px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.panel-title {
+  color: #ffffff;
+  font-size: 25px;
+  margin-left: 20px;
+  padding-top: 5px;
+  font-family: BebasNeue !important;
+  letter-spacing: 1px;
+
+}
+
+.price-title {
+  color: #08b284;
+  font-size: 35px;
+  text-align: center;
+  line-height: 1;
+  font-weight: 100;
+}
+
+.panel-img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+  float: left;
+}
+
+.panel-text {
+  background-color: #000000;
+  padding: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  font-size: 12px;
+  width: fit-content;
+  color: #08b284;
+  float: left;
+  text-transform: uppercase;
+  width: 100%;
+  font-family: BebasNeue !important;
+  letter-spacing: 0.5px;
+
+
+}
+
+.panel-text1 {
+  color: #ffffff;
+  font-size: 16px;
+
+
+}
+
+.panel-text2 {
+  color: #08b284;
+
+}
+
+.section-header3 {
+  font-size: 53px;
+  letter-spacing: 1px;
+  line-height: 0.8;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #08b284;
+  text-transform: uppercase;
+  font-family: BebasNeue;
+  text-align: center;
+}
+
+.f2{
+  letter-spacing: 5px;
+  font-family: BebasNeue;
+  font-size: 60px;
+}
+
+.schedule {
+  background-color: #000000;
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+
+.price-ul {
+  color: #08b284;
+  font-size: 20px;
+}
+
+.price-ul2 {
+  color: #cecece;
+  font-size: 20px;
+}
+
+.price-ul2 li {
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.priceli {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.price-ul li {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.sponsor-price {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #08b284;
+  text-align: center;
+  max-width: 100%;
+  margin-top: -75px
+}
+
+
+.sponsor-ul {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.sponsor-ul li {
+ /*margin-bottom: 20px;*/
+}
+
+.sponsorli {
+  color: #000000;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+
+}
+
+.stats-counter{
+  background-color: #08b284;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.mb1{
+  margin-bottom: 30px;
+}
+
+.contact .php-email-form select{
+  height: 48px;
+}

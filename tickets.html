@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    @font-face {
+      font-family: Montserrat;
+      src: url('assets/font/Montserrat-Regular.otf');
+    }
+
+    @font-face {
+      font-family: BebasNeue;
+      src: url('assets/font/BebasNeue.otf');
+    }
+
+    span {
+      cursor: pointer;
+    }
+
+    .number {
+      margin: 100px;
+    }
+
+    .minus,
+    .plus {
+      width: 50px;
+      height: 100%;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: bold;
+      background: #08b284;
+      border-radius: 4px;
+      padding: 8px 5px 8px 5px;
+      border: 1px solid #08b284;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    .counter {
+      height: 34px;
+      width: 100px;
+      text-align: center;
+      font-size: 26px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BITCOIN CASH</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets-tic/img/favicon.png" rel="icon">
+  <link href="assets-tic/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="assets-tic/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets-tic/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets-tic/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets-tic/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets-tic/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets-tic/css/main.css?v=6" rel="stylesheet">
+  <link href="assets-tic/css/custom.css?v=6" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+
+
+        <img class="logo pull-left" src="assets-tic/img/logo-small.png" alt="logo">
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html#home">HOME</a></li>
+          <li><a href="index.html#speaker">SPEAKERS</a></li>
+          <li><a href="agenda.html">AGENDA</a></li>
+          <li><a href="index.html#sponsor">SPONSOR</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+          <li class="d-block d-sm-none"><a href="#">TICKETS</a></li>
+        </ul>
+      </nav>
+      <div style="text-align: center;" class="d-flex">
+        <div id="defaultCountdown">
+          <span class="countdown_row countdown_show3">
+            <span class="countdown_section"><span class="countdown_amount">76</span><br>DAYS</span>
+            <span class="countdown_section"><span class="countdown_amount">0</span><br>HRS</span>
+            <span class="countdown_section"><span class="countdown_amount">0</span><br>MINS</span>
+            <span class="countdown_section"><span class="countdown_amount">0</span><br>SECS</span>
+          </span>
+        </div>
+      </div>
+      <a class="btn-book-a-table d-none d-sm-block" href="#">TICKETS</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+
+  <section id="tickets" class="contact" style="background-color: #000000; ">
+    <div class="container" style="margin-top: 50px;">
+      <div class="section-header">
+        <h2 style="color: #ffffff;">TICKETS</h2>
+      </div>
+      <form action="forms/contact.php" method="post" style="background-color: #000000;" role="form"
+        class="php-email-form p-3 p-md-4">
+        <div class="row">
+          <div class="col-xl-12 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Full Name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+          </div>
+          <div class="col-xl-6 form-group">
+            <input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 form-group">
+            <select class="form-control" onchange="calculate()" name="subject" id="subject" placeholder="Select Tickets"
+              required>
+              <option value="">Select Ticket</option>
+              <option value="RESIDENT DAY PASS">THE RESIDENT DAY PASS - 125 USD</option>
+              <option value="PREMIUM EXPERIENCE">PREMIUM EXPERIENCE - 500 USD</option>
+              <option value="LUXURY EXPERIENCE">LUXURY EXPERIENCE - 2000 USD</option>
+            </select>
+          </div>
+          <div class="col-xl-3 form-group">
+            <span class="minus">-</span>
+            <input class="counter" onchange="calculate();" id="qty" name="qty" type="text" value="1" />
+            <span class="plus">+</span>
+          </div>
+          <div class="col-xl-3 form-group">
+            <h2 class="bold" style="color: #ffffff;" id="price">125 USD</h2>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+        <div class="form-group" style="color:#ffffff;"> BOOK YOUR HOTEL<br>
+          <a target="_BLANK" href="https://www.royalstkittshotel.com">www.royalstkittshotel.com</a><br>
+          discount code : bch22
+        </div>
+        <div class="my-3">
+          <div class="loading">Loading</div>
+          <div class="error-message"></div>
+          <div class="sent-message">Message delivered. Please check your email for the payment link within 24 Hour</div>
+        </div>
+        <div class="text-center"><button type="submit">Submit</button></div>
+      </form>
+
+    </div>
+  </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-5">
+          <div>
+            <p>
+              <span style="color: #08b284;"> BE A SPONSOR :</span><br>
+              <span style="color: #ffffff;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                  data-cfemail="f5a6b4b9b0a6b5b2b9bab7b4b9b9bcbbbedbbcbba1b0a7bbb4a1bcbabbb4b9">[email&#160;protected]</a></span>
+            </p>
+            <p>
+              <span style="color: #08b284;"> RSVP :</span><br>
+              <span style="color: #ffffff;"><b>+16462178512</b></span>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 footer-links d-flex">
+          <p>
+            <span style="color: #08b284;"> PAYMENTS :</span><br>
+            <span style="color: #ffffff;">BCH2022.CRYPTO</span>
+          </p>
+        </div>
+        <div class="col-lg-2 ">
+          <img src="assets-tic/img/footer-logo.png" class="pull-right" style="text-align: center;max-width: 80%;">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  <script src="assets-tic/js/jquery.min.js"></script>
+  <script src="assets-tic/js/jquery.countdown.min.js"></script>
+  <script src="assets-tic/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets-tic/vendor/aos/aos.js"></script>
+  <script src="assets-tic/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets-tic/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets-tic/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets-tic/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets-tic/js/main.js"></script>
+  <script>
+
+    var ComingSoon = function () {
+
+      return {
+        //main function to initiate the module
+        init: function () {
+          var austDay = new Date();
+          austDay = new Date(austDay.getFullYear() + 1, 1 - 1, 26);
+          $('#defaultCountdown').countdown({ until: austDay });
+          $('#year').text(austDay.getFullYear());
+        }
+
+      };
+
+    }();
+
+
+    jQuery(document).ready(function () {
+
+      $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
+      });
+      $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
+      });
+
+      $(function () {
+        var austDay = new Date();
+        austDay = new Date(2022, 11 - 1, 12, 0);
+        $('#defaultCountdown').countdown({ until: austDay });
+        $('#year').text(austDay.getFullYear());
+      });
+    });
+
+    function calculate() {
+      type = document.getElementById('subject').value;
+      qty = document.getElementById('qty').value;
+      if (type == 'PREMIUM EXPERIENCE') {
+        document.getElementById('price').innerHTML = qty * 500 + ' USD';
+      } else if (type == 'RESIDENT DAY PASS') {
+        document.getElementById('price').innerHTML = qty * 125 + ' USD';
+      }
+      else if (type == 'LUXURY EXPERIENCE') {
+        document.getElementById('price').innerHTML = qty * 2000 + ' USD';
+      }
+      else {
+        document.getElementById('price').innerHTML = '0 USD';
+      }
+    }
+
+    var queryString = window.location.search;
+    queryString = queryString.replace('%20', ' ');
+    queryString = queryString.replace('%20', ' ');
+    console.log(queryString);
+    document.getElementById('subject').value = queryString.substring(8);
+    calculate();
+
+  </script>
+</body>
+
+</html>
